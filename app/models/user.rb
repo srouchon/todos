@@ -1,6 +1,4 @@
 class User
-  attr_accessor :todos
-  
   def initialize(email)
     @email = email
   end

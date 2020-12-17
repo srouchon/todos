@@ -1,6 +1,6 @@
 class CompletionsController < ApplicationController
   def create
-    todo.touch(:completed_at) # updates attribute with current time
+    todo.complete!
     redirect_to todos_path
   end
   
