@@ -5,6 +5,9 @@ class Todo < ApplicationRecord
   
   def complete!
     touch(:completed_at) # updates attribute with current time
-  end
-  
+  end  
+
+  def incomplete!
+    update_column(:completed_at, nil)
+  end  
 end
